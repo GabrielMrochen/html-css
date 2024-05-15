@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header{
+            background-color: white;
+            padding: 7px;
+            margin: 15px;
+        }
+
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+        }
+
+        nav{
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            margin-right: 15px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 7px;
+            margin: 15px;
+            border-radius: 15px 0px;
+        }
+
+        #esportes > h2{
+            margin: 10px;
+        }
+
+        #esportes > #esp{
+            background-color: lightgray;
+            margin: 10px 10px 20px 10px;
+        }
+
+        #Noticias{
+            background-color: rgb(170, 168, 168);
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.534);
+        }
+
+        #Noticias > h2{
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        article{
+            text-indent: 20px;
+            text-align: justify;
+        }
+
+        article > aside{
+            background-color: rgb(78, 78, 78);
+            color: white;
+            padding: 2px;
+        }
+
+        footer{
+            color: white;
+            background-color: black;
+            padding: 4px;
+            text-align: center;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu primeiro Site</h1>
+        <nav id="links">
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+        </nav>
+    </header>
+        <main>
+            <section id="esportes">
+                <h2>Curiosidades</h2>
+                <p id="esp">Esportes Politica e Tecnologia</p>
+            </section>
+            <section id="Noticias">
+                <h2>Noticias</h2>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus ratione aliquid? Magni laudantium ex a quisquam maxime! Maxime iste facere delectus. Ad beatae nemo cum dolorem ducimus, quis corrupti?</p>
+                    <aside>Desenvolvido por Joao Bastos</aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por Gabriel</p>
+        </footer>
+</body>
+</html>

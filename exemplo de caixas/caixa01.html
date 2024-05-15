@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 27px;
+            width: 400px;
+
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: black; */
+
+            border: 10px solid black;
+
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 20px; */
+
+            margin: 20px auto 40px auto;
+
+            /* padding-top: 10px;
+            padding-right: 10px; 
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            padding: 10px 10px 30px 10px;
+
+            text-align: center;
+            text-decoration: underline;
+        }
+        #box{
+            /* border-width: 5px;
+            border-style: dotted;
+            border-color: blue; */
+
+            border: 5px dotted blue;
+
+            /* padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px; */
+
+            padding: 2px;
+        }
+        #titulo:hover{
+            color: brown;
+            background-color: lightgreen;
+        }
+        p{
+            text-indent: 30px;
+        }
+        .esconder:hover{
+            color: red;
+        }
+        .esconder > p{
+            display: none;
+        }
+        .esconder:hover > p{
+            display: block;
+            color: aqua;
+            background-color: chocolate;
+            width: 150px;
+        }
+        .link:hover{
+            color: lightsalmon;
+        }
+        .link > p{
+            display: none;
+        }
+        .link:hover > p{
+            display: block;
+        }
+        h2{
+            background-color: lightcyan;
+            height: 27px;
+            width: 400px;
+            margin: 20px auto 20px auto;
+            border: 10px solid black;
+            padding: 10px;
+            text-decoration: underline;
+            text-align: center;
+            outline: 10px double pink;
+        }
+        #pseu{
+            height: 20px;
+            width: 90px;
+            background-color: darkgreen;
+            color: black;
+            display: block;
+            text-decoration: none; 
+        }
+        .link{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Exemplos de caixa Box-Level</h1>
+    <div class="p01">
+        <p>Paragrafos tambem sao caixas box-level, mas os <a href="#" id="box">links sao caixas inline-level</a>, vamos ver como tudo isso funciona!</p>
+    </div>
+
+        <div class="esconder">
+            passe o mouse aqui
+            <p>texto escondido</p>
+        </div> 
+    <h2>Aqui esta exemplos de pseudoelemento</h2>
+    <div class="link">
+        Passe o mouse aqui para acessar o link!
+        <p><a href="#" id="pseu">link</a></p>
+    </div>
+</body>
+</html>
