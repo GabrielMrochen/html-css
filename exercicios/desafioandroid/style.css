@@ -142,7 +142,9 @@ main img{
 main h1{
     font-family: 'idroid', sans-serif;
     color: #2C6847;
-    font-size: 27px;
+    font-size: 2em;
+    max-width: 800px;
+    margin: auto;
     margin: 5px 15px 0px 15px;
 }
 
@@ -150,9 +152,10 @@ main h2{
     font-family: var(--font-android);
     color: #2C6847;
     margin: 5px 15px 0px 15px;
+    font-size: 1.3em;
     background: linear-gradient(to right, #35742e69, #40ca3648, #ebe5c5);
     border-radius: 20px;
-    text-indent: 10px;
+    text-indent: 15px;
 }
 
 aside{
